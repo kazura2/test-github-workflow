@@ -21,10 +21,10 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r /home/runner/work/test-github-workflow/requirements.txt
-          
+          python -m pip install -r /home/runner/work/test-github-workflow/cw_praca_z_kodem/requirements.txt
+
       - name: Install Pylint
         run: python -m pip install pylint
 
       - name: Run PyLint
-        run: pylint /home/runner/work/test-github-workflow/app.py
+        run: pylint /home/runner/work/test-github-workflow/cw_praca_z_kodem/app.py
